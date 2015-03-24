@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static primeFactors.PrimeFactors.*;
 
 public class PrimeFactorsTest {
 
@@ -15,12 +16,12 @@ public class PrimeFactorsTest {
 
     @Test
     public void testOne() {
-        assertEquals(list(), PrimeFactors.generate(1));
+        assertEquals(list(), generate(1));
     }
 
     @Test
     public void testTwo() {
-        assertEquals(list(2), PrimeFactors.generate(2));
+        assertEquals(list(2), generate(2));
     }
 
 }
