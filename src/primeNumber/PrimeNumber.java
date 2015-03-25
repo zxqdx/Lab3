@@ -8,7 +8,14 @@ public class PrimeNumber {
     public static List<Integer> generate(Integer inputNumber) {
         List<Integer> primes = new ArrayList<Integer>();
         for (int i = 2; i < inputNumber; i++) {
-            if ((i == 2 || i % 2 != 0) && (i == 3 || i % 3 != 0)) {
+            boolean isPrime = true;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
                 primes.add(i);
             }
         }
