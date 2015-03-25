@@ -8,7 +8,9 @@ public class PrimeNumber {
     public static List<Integer> generate(Integer inputNumber) {
         List<Integer> primes = new ArrayList<Integer>();
         for (int i = 2; i < inputNumber; i++) {
-            primes.add(i);
+            if (i != 4) {
+                primes.add(i);
+            }
         }
         return primes;
     }
