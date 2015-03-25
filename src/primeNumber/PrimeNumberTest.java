@@ -31,7 +31,8 @@ public class PrimeNumberTest {
     public static Collection primeNumbers() {
         return Arrays.asList(new Object[][] {
                 {2, list()},
-                {3, list(2)}
+                {3, list(2)},
+                {4, list(2, 3)}
         });
     }
 
