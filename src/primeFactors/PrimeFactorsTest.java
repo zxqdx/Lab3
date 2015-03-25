@@ -34,4 +34,9 @@ public class PrimeFactorsTest {
         assertEquals(list(2, 2), generate(4));
     }
 
+    @Test
+    public void testSix() {
+        assertEquals(list(2, 3), generate(6));
+    }
+
 }
