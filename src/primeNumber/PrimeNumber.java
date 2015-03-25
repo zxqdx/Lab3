@@ -1,7 +1,6 @@
 package primeNumber;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class PrimeNumber {
@@ -10,6 +9,9 @@ public class PrimeNumber {
         List<Integer> primes = new ArrayList<Integer>();
         if (inputNumber > 2) {
             primes.add(2);
+        }
+        if (inputNumber > 3) {
+            primes.add(3);
         }
         return primes;
     }
