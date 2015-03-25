@@ -30,15 +30,16 @@ public class PrimeNumberTest {
     @Parameterized.Parameters
     public static Collection primeNumbers() {
         return Arrays.asList(new Object[][] {
-                {2, list()},
-                {3, list(2)},
-                {4, list(2, 3)},
-                {5, list(2, 3)},
-                {6, list(2, 3, 5)},
-                {7, list(2, 3, 5)},
-                {10, list(2, 3, 5, 7)},
-                {13, list(2, 3, 5, 7, 11)},
-                {16, list(2, 3, 5, 7, 11, 13)}
+            {2, list()},
+            {3, list(2)},
+            {4, list(2, 3)},
+            {5, list(2, 3)},
+            {6, list(2, 3, 5)},
+            {7, list(2, 3, 5)},
+            {10, list(2, 3, 5, 7)},
+            {13, list(2, 3, 5, 7, 11)},
+            {16, list(2, 3, 5, 7, 11, 13)},
+            {100, list(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97)}
         });
     }
 
