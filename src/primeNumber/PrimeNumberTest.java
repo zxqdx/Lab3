@@ -39,5 +39,10 @@ public class PrimeNumberTest {
         });
     }
 
+    @Test
+    public void testPrimeNumberGenerate() {
+        System.out.println("Testing number: " + inputNumber);
+        assertEquals(expectedResult, generate(inputNumber));
+    }
 
 }
