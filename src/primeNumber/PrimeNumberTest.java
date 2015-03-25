@@ -33,7 +33,8 @@ public class PrimeNumberTest {
                 {2, list()},
                 {3, list(2)},
                 {4, list(2, 3)},
-                {5, list(2, 3)}
+                {5, list(2, 3)},
+                {6, list(2, 3, 5)}
         });
     }
 
