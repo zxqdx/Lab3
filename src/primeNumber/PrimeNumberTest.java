@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -15,21 +16,15 @@ import static primeNumber.PrimeNumber.generate;
 @RunWith(Parameterized.class)
 public class PrimeNumberTest {
     private Integer inputNumber;
-    private Boolean expectedResult;
-    private PrimeNumber primeNumber;
+    private List<Integer> expectedResult;
 
     private static List<Integer> list(Integer...integers) {
         return Arrays.asList(integers);
     }
 
-    public PrimeNumberTest(Integer inputNumber, Boolean expectedResult) {
+    public PrimeNumberTest(Integer inputNumber, List<Integer> expectedResult) {
         this.inputNumber = inputNumber;
         this.expectedResult = expectedResult;
-    }
-
-    @Before
-    public void initialize() {
-        primeNumber = new PrimeNumber();
     }
 
     @Parameterized.Parameters
